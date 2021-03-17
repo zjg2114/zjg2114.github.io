@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Promise | joe&#39;s blog</title>
+    <meta name="description" content="周俊贵个人博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.2a8ad169.css" as="style"><link rel="preload" href="/assets/js/app.aedc5ffe.js" as="script"><link rel="preload" href="/assets/js/2.70898950.js" as="script"><link rel="preload" href="/assets/js/28.6287cfa5.js" as="script"><link rel="prefetch" href="/assets/js/10.11dc62f7.js"><link rel="prefetch" href="/assets/js/11.3a894ea9.js"><link rel="prefetch" href="/assets/js/12.0c30f304.js"><link rel="prefetch" href="/assets/js/13.facc7040.js"><link rel="prefetch" href="/assets/js/14.1eb693d5.js"><link rel="prefetch" href="/assets/js/15.15ab7951.js"><link rel="prefetch" href="/assets/js/16.679f5af6.js"><link rel="prefetch" href="/assets/js/17.db7e493a.js"><link rel="prefetch" href="/assets/js/18.b512b508.js"><link rel="prefetch" href="/assets/js/19.f8901854.js"><link rel="prefetch" href="/assets/js/20.2aa8e3a9.js"><link rel="prefetch" href="/assets/js/21.7983abd0.js"><link rel="prefetch" href="/assets/js/22.32896dab.js"><link rel="prefetch" href="/assets/js/23.57865db1.js"><link rel="prefetch" href="/assets/js/24.a57124b2.js"><link rel="prefetch" href="/assets/js/25.eda5ceb8.js"><link rel="prefetch" href="/assets/js/26.df393e3f.js"><link rel="prefetch" href="/assets/js/27.add7c426.js"><link rel="prefetch" href="/assets/js/29.2b77468c.js"><link rel="prefetch" href="/assets/js/3.b6e4ebb5.js"><link rel="prefetch" href="/assets/js/30.b7a5e4ba.js"><link rel="prefetch" href="/assets/js/31.e5b87034.js"><link rel="prefetch" href="/assets/js/32.f0460536.js"><link rel="prefetch" href="/assets/js/33.b1c0fbe7.js"><link rel="prefetch" href="/assets/js/4.35e1c144.js"><link rel="prefetch" href="/assets/js/5.aa8ff341.js"><link rel="prefetch" href="/assets/js/6.782cbce5.js"><link rel="prefetch" href="/assets/js/7.acde5501.js"><link rel="prefetch" href="/assets/js/8.4f729283.js"><link rel="prefetch" href="/assets/js/9.45446f5c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2a8ad169.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">joe's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code-analysis/vue-analysis/reactive/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code-analysis/react-analysis/" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><a href="/basic-knowledge/javascript.html" class="nav-link">
+  基础理论
+</a></div><div class="nav-item"><a href="/code/debounce&amp;throttle.html" class="nav-link">
+  coding
+</a></div><div class="nav-item"><a href="/daily-record/io.html" class="nav-link">
+  日常笔记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code-analysis/vue-analysis/reactive/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code-analysis/react-analysis/" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><a href="/basic-knowledge/javascript.html" class="nav-link">
+  基础理论
+</a></div><div class="nav-item"><a href="/code/debounce&amp;throttle.html" class="nav-link">
+  coding
+</a></div><div class="nav-item"><a href="/daily-record/io.html" class="nav-link">
+  日常笔记
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/code/debounce&amp;throttle.html" class="sidebar-link">防抖与节流</a></li><li><a href="/code/bind&amp;call&amp;apply.html" class="sidebar-link">bind &amp; call &amp; apply</a></li><li><a href="/code/array_method.html" class="sidebar-link">数组方法</a></li><li><a href="/code/promise.html" class="active sidebar-link">Promise</a></li><li><a href="/code/watcher.html" class="sidebar-link">观察者模式</a></li><li><a href="/code/subscrible&amp;publish.html" class="sidebar-link">发布-订阅</a></li><li><a href="/code/LRU.html" class="sidebar-link">LRU算法</a></li><li><a href="/code/tree.html" class="sidebar-link">二叉树的遍历</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="promise"><a href="#promise" class="header-anchor">#</a> Promise</h1> <p>-实现异步操作队列化，按照期望的顺序执行</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">MyPromise</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">executor</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        <span class="token comment">// then方法注册的resolve事件队列</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_resolveQueue<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+        <span class="token comment">// then方法注册的reject事件队列</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_rejectQueue<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+        <span class="token comment">// 定义resolve方法</span>
+        <span class="token keyword">let</span> <span class="token function-variable function">_resolve</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>_resolveQueue<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// 当队列中有事件时 回调函数被调用</span>
+                <span class="token keyword">const</span> callBack <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_resolveQueue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token function">callBack</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 同理实现reject</span>
+        <span class="token keyword">let</span> <span class="token function-variable function">_reject</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>_rejectQueue<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// 当队列中有事件时 回调函数被调用</span>
+                <span class="token keyword">const</span> callBack <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_rejectQueue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token function">callBack</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// new myPromise实例时调用传进来的函数 将定义好的relove 和reject传入</span>
+        <span class="token function">executor</span><span class="token punctuation">(</span>_resolve<span class="token punctuation">,</span>_reject<span class="token punctuation">)</span>   
+    <span class="token punctuation">}</span>
+    <span class="token comment">// then 方法</span>
+    <span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">resloveFn<span class="token punctuation">,</span>rejectFn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_resolveQueue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>resloveFn<span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_rejectQueue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>rejectFn<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> p1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyPromise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'result'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+p1<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 1,2,3,4,result</span>
+<span class="token comment">// 1.执行new promise的函数,遇到定时器任务，放定时器队列</span>
+<span class="token comment">// 2.then 方法调用 将事件推到队列中</span>
+<span class="token comment">// 3.执行下面的同步代码</span>
+<span class="token comment">// 4.定时任务被执行 resolve执行 调用then传入的方法</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/code/array_method.html" class="prev">
+        数组方法
+      </a></span> <span class="next"><a href="/code/watcher.html">
+        观察者模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aedc5ffe.js" defer></script><script src="/assets/js/2.70898950.js" defer></script><script src="/assets/js/28.6287cfa5.js" defer></script>
+  </body>
+</html>

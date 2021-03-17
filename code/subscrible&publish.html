@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>发布-订阅 | joe&#39;s blog</title>
+    <meta name="description" content="周俊贵个人博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.2a8ad169.css" as="style"><link rel="preload" href="/assets/js/app.aedc5ffe.js" as="script"><link rel="preload" href="/assets/js/2.70898950.js" as="script"><link rel="preload" href="/assets/js/30.b7a5e4ba.js" as="script"><link rel="prefetch" href="/assets/js/10.11dc62f7.js"><link rel="prefetch" href="/assets/js/11.3a894ea9.js"><link rel="prefetch" href="/assets/js/12.0c30f304.js"><link rel="prefetch" href="/assets/js/13.facc7040.js"><link rel="prefetch" href="/assets/js/14.1eb693d5.js"><link rel="prefetch" href="/assets/js/15.15ab7951.js"><link rel="prefetch" href="/assets/js/16.679f5af6.js"><link rel="prefetch" href="/assets/js/17.db7e493a.js"><link rel="prefetch" href="/assets/js/18.b512b508.js"><link rel="prefetch" href="/assets/js/19.f8901854.js"><link rel="prefetch" href="/assets/js/20.2aa8e3a9.js"><link rel="prefetch" href="/assets/js/21.7983abd0.js"><link rel="prefetch" href="/assets/js/22.32896dab.js"><link rel="prefetch" href="/assets/js/23.57865db1.js"><link rel="prefetch" href="/assets/js/24.a57124b2.js"><link rel="prefetch" href="/assets/js/25.eda5ceb8.js"><link rel="prefetch" href="/assets/js/26.df393e3f.js"><link rel="prefetch" href="/assets/js/27.add7c426.js"><link rel="prefetch" href="/assets/js/28.6287cfa5.js"><link rel="prefetch" href="/assets/js/29.2b77468c.js"><link rel="prefetch" href="/assets/js/3.b6e4ebb5.js"><link rel="prefetch" href="/assets/js/31.e5b87034.js"><link rel="prefetch" href="/assets/js/32.f0460536.js"><link rel="prefetch" href="/assets/js/33.b1c0fbe7.js"><link rel="prefetch" href="/assets/js/4.35e1c144.js"><link rel="prefetch" href="/assets/js/5.aa8ff341.js"><link rel="prefetch" href="/assets/js/6.782cbce5.js"><link rel="prefetch" href="/assets/js/7.acde5501.js"><link rel="prefetch" href="/assets/js/8.4f729283.js"><link rel="prefetch" href="/assets/js/9.45446f5c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2a8ad169.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">joe's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code-analysis/vue-analysis/reactive/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code-analysis/react-analysis/" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><a href="/basic-knowledge/javascript.html" class="nav-link">
+  基础理论
+</a></div><div class="nav-item"><a href="/code/debounce&amp;throttle.html" class="nav-link">
+  coding
+</a></div><div class="nav-item"><a href="/daily-record/io.html" class="nav-link">
+  日常笔记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code-analysis/vue-analysis/reactive/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code-analysis/react-analysis/" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><a href="/basic-knowledge/javascript.html" class="nav-link">
+  基础理论
+</a></div><div class="nav-item"><a href="/code/debounce&amp;throttle.html" class="nav-link">
+  coding
+</a></div><div class="nav-item"><a href="/daily-record/io.html" class="nav-link">
+  日常笔记
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/code/debounce&amp;throttle.html" class="sidebar-link">防抖与节流</a></li><li><a href="/code/bind&amp;call&amp;apply.html" class="sidebar-link">bind &amp; call &amp; apply</a></li><li><a href="/code/array_method.html" class="sidebar-link">数组方法</a></li><li><a href="/code/promise.html" class="sidebar-link">Promise</a></li><li><a href="/code/watcher.html" class="sidebar-link">观察者模式</a></li><li><a href="/code/subscrible&amp;publish.html" class="active sidebar-link">发布-订阅</a></li><li><a href="/code/LRU.html" class="sidebar-link">LRU算法</a></li><li><a href="/code/tree.html" class="sidebar-link">二叉树的遍历</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="发布-订阅"><a href="#发布-订阅" class="header-anchor">#</a> 发布-订阅</h1> <ul><li>模式应用：Vue的响应式更新视图</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Dep</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eventBus <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 需要有三个方法,订阅/取消订阅/发布</span>
+
+  <span class="token comment">//订阅</span>
+  <span class="token function">subscrible</span><span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      <span class="token keyword">typeof</span> event <span class="token operator">!==</span> <span class="token string">&quot;string&quot;</span> <span class="token operator">&amp;&amp;</span>
+      <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">&quot;[object Function]&quot;</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;传入参数格式错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">callback</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 链式调用</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 取消订阅</span>
+  <span class="token function">unsubscrible</span><span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      <span class="token keyword">typeof</span> event <span class="token operator">!==</span> <span class="token string">&quot;string&quot;</span> <span class="token operator">&amp;&amp;</span>
+      <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">&quot;[object Function]&quot;</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;传入参数格式错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span><span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;没有事件可取消订阅&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index<span class="token punctuation">,</span> arr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>item <span class="token operator">===</span> callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 链式调用</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 通知发布</span>
+  <span class="token function">notify</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arguments<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eventBus<span class="token punctuation">[</span>event<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">callback</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dep</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">event1</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;event1触发&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+dep<span class="token punctuation">.</span><span class="token function">subscrible</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> event1<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/code/watcher.html" class="prev">
+        观察者模式
+      </a></span> <span class="next"><a href="/code/LRU.html">
+        LRU算法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aedc5ffe.js" defer></script><script src="/assets/js/2.70898950.js" defer></script><script src="/assets/js/30.b7a5e4ba.js" defer></script>
+  </body>
+</html>
